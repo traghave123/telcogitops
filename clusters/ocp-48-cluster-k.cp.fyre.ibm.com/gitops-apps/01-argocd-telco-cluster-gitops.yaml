@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-#    namespace: test-sno-siteconfig
+    namespace: ocp-48-cluster-k 
   project: default
   source:
     path: clusters/ocp-48-cluster-k.cp.fyre.ibm.com/ztp/gitops
