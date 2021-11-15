@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: default
-  namespace: openshift-gitops
+  namespace: ocp-48-cluster-k
 spec:
   clusterResourceWhitelist:
   - group: '*'

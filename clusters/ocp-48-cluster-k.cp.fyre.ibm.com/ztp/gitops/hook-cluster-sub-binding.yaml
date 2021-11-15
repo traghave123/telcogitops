@@ -11,3 +11,6 @@ subjects:
 - kind: ServiceAccount
   name: default
   namespace: clusters-sub
+- kind: ServiceAccount
+  name: default
+  namespace: common

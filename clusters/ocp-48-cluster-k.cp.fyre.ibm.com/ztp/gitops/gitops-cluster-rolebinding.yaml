@@ -4,7 +4,7 @@ kind: ClusterRole
 metadata:
   annotations:
     rbac.authorization.kubernetes.io/autoupdate: "true"
-  name: openshift-gitops-custom-role
+  name: ocp-48-cluster-k-custom-role
 rules:
 - apiGroups:
   - agent-install.openshift.io
@@ -23,11 +23,11 @@ roleRef:
   name: openshift-gitops-custom-role
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-argocd-application-controller
-    namespace: openshift-gitops
+    name: ocp-48-cluster-k-argocd-application-controller
+    namespace: ocp-48-cluster-k
   - kind: ServiceAccount
-    name: openshift-gitops-argocd-server
-    namespace: openshift-gitops
+    name: ocp-48-cluster-k-argocd-server
+    namespace: ocp-48-cluster-k
 ---
 # WARNING: ONLY USE THIS FOR MANAGING CLUSTERS NOT FOR REGULAR USERS
 apiVersion: rbac.authorization.k8s.io/v1
@@ -40,10 +40,10 @@ roleRef:
   name: cluster-admin
 subjects:
   - kind: ServiceAccount
-    name: openshift-gitops-argocd-application-controller
-    namespace: openshift-gitops
+    name: ocp-48-cluster-k-argocd-application-controller
+    namespace: ocp-48-cluster-k
   # NOTE: THIS INSTANCE IT IS ONLY FOR CLUSTER ADMINS
   - kind: ServiceAccount
-    name: openshift-gitops-argocd-server
-    namespace: openshift-gitops    
+    name: ocp-48-cluster-k-argocd-server
+    namespace: ocp-48-cluster-k   
     
