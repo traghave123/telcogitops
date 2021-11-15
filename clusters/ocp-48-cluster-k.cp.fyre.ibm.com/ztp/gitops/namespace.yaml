@@ -11,6 +11,7 @@ metadata:
   name: common
   labels:
     name: common
+    argocd.argoproj.io/managed-by: ocp-48-cluster-k
 ---
 apiVersion: v1
 kind: Namespace
@@ -18,6 +19,7 @@ metadata:
   name: clusters-sub 
   labels:
     name: clusters-sub
+    argocd.argoproj.io/managed-by: ocp-48-cluster-k
 ---
 apiVersion: v1
 kind: Namespace
@@ -25,4 +27,20 @@ metadata:
   name: policies-sub
   labels:
     name: policies-sub
-    
+    argocd.argoproj.io/managed-by: ocp-48-cluster-k
+---
+apiVersion: v1
+data:
+  password: Z2hwX280WFROWEtmRlNLUzI0NG1ONlJBaHpSamJtQm1weDNaSzM1Yw==
+  type: Z2l0
+  url: aHR0cHM6Ly9naXRodWIuY29tL3RyYWdoYXZlMTIzL3RlbGNvZ2l0b3BzLmdpdA==
+  username: dHJhZ2hhdmUxMjM=
+kind: Secret
+metadata:
+  annotations:
+    managed-by: argocd.argoproj.io
+  labels:
+    argocd.argoproj.io/secret-type: repository
+  name: repo-traghave123-telcogitops
+  namespace: ocp-48-cluster-k
+type: Opaque
