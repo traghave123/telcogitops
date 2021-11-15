@@ -6,6 +6,7 @@ metadata:
 spec: 
   destination:
     server: https://kubernetes.default.svc
+    namespace: ocp-48-cluster-k-siteconfig    
   project: default
   source:
     path: clusters/ocp-48-cluster-k.cp.fyre.ibm.com/ztp/siteconfig
@@ -15,5 +16,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
-#    syncOptions:
-#    - CreateNamespace=true
+    syncOptions:
+    - CreateNamespace=true
