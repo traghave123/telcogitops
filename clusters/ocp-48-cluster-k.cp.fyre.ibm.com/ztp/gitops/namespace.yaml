@@ -11,3 +11,18 @@ metadata:
   name: common
   labels:
     name: common
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: clusters-sub 
+  labels:
+    name: clusters-sub
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: policies-sub
+  labels:
+    name: policies-sub
+    
