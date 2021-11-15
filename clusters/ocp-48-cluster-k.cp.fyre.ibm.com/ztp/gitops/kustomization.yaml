@@ -5,6 +5,7 @@ resources:
   - argocd-openshift-gitops.yaml
   - gitops-cluster-rolebinding.yaml
   - app-project.yaml
+  - namespace.yaml
 
 #  - clusters-app.yaml
   - hook-cluster-sub-role.yaml      # sitecoonfigs.ran.openshift.io
