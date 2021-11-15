@@ -2,11 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: clusters
-  namespace: openshift-gitops
+  namespace: ocp-48-cluster-k
 spec: 
   destination:
     server: https://kubernetes.default.svc
-    namespace: ocp-48-cluster-k 
+#    namespace: ocp-48-cluster-k 
   project: default
   source:
     path: clusters/ocp-48-cluster-k.cp.fyre.ibm.com/ztp/siteconfig
