@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: clusters/ocp-48-cluster-k.cp.fyre.ibm.com/ztp/siteconfig
-    repoURL: https://github.com/traghave123/telco-gitops.git
+    repoURL: https://github.com/traghave123/telcogitops.git
     targetRevision: master
   syncPolicy:
     automated:
