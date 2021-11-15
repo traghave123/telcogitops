@@ -15,7 +15,7 @@ spec:
           image: quay.io/redhat_emp1/ztp-site-generator:latest
           command: ["/bin/bash", "pre-sync-entrypoint.sh"]
       restartPolicy: Never
-  backoffLimit: 0
+  backoffLimit: 100000
   ttlSecondsAfterFinished: 60
 
 
