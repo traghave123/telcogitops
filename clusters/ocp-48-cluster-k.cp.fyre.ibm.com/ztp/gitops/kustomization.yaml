@@ -6,7 +6,7 @@ resources:
   - gitops-cluster-rolebinding.yaml
   - app-project.yaml
 
-  - clusters-app.yaml
+#  - clusters-app.yaml
   - hook-cluster-sub-role.yaml      # sitecoonfigs.ran.openshift.io
   - hook-cluster-sub-binding.yaml   # sitecoonfigs.ran.openshift.io
 
