@@ -45,5 +45,4 @@ subjects:
   # NOTE: THIS INSTANCE IT IS ONLY FOR CLUSTER ADMINS
   - kind: ServiceAccount
     name: ocp-48-cluster-k-argocd-server
-    namespace: ocp-48-cluster-k   
-    
+    namespace: ocp-48-cluster-k
